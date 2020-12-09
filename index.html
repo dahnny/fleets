@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fleets</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e8473f0f94.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="title">
+      <div id="overlay"></div>
+      <div class="image-section"></div>
+      <div class="title-container">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand nav-link">Fleets</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="#footer">Contact</a>
+                </li>
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="#cta">Download</a>
+                </li>
+              </ul>
+            </div>
+            <button
+              class="btn btn-outline-success pl-4 pr-4 my-2 my-sm-0 nav-button"
+            >
+              Login
+            </button>
+          </nav>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h1 class="new-h1">The most reliable way to book a cab</h1>
+                <button
+                  type="button"
+                  style="width: 100%"
+                  class="btn btn-success btn-lg shadow"
+                >
+                  <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+              </div>
+              <div class="col-lg-6">
+                <div class="card title-card">
+                  <div class="">
+                    <ul
+                      class="nav nav-tabs card-header-tabs nav-fill"
+                      id="bologna-list"
+                      role="tablist"
+                    >
+                      <li class="nav-item">
+                        <a
+                          style="height: 60px"
+                          class="link-card nav-link active"
+                          href="#description"
+                          role="tab"
+                          aria-controls="description"
+                          aria-selected="true"
+                          >Book Now</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          style="height: 60px"
+                          class="link-card nav-link"
+                          href="#history"
+                          role="tab"
+                          aria-controls="history"
+                          aria-selected="false"
+                          >Book later</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content mt-3">
+                      <div
+                        class="tab-pane active"
+                        id="description"
+                        role="tabpanel"
+                      >
+                        <form class="login100-form validate-form">
+                          <div class="form-group wrap-input100 validate-input">
+                            <input
+                              type="text"
+                              class="form-control input100"
+                              placeholder="Pickup Address"
+                            />
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                          </div>
+                          <div class="form-group wrap-input100 validate-input">
+                            <input
+                              type="text"
+                              class="form-control input100"
+                              placeholder="Dropoff Address"
+                            />
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                              <i class="fas fa-map-pin"></i>
+                            </span>
+                          </div>
+                          <div class="form-group wrap-input100 validate-input">
+                            <input
+                              type="text"
+                              class="form-control input100"
+                              placeholder="Number of persons"
+                            />
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                              <i class="fas fa-users"></i>
+                            </span>
+                          </div>
+                          <div class="form-group wrap-input100 validate-input">
+                            <select class="form-control input100">
+                              <option value="" disabled selected>
+                                Select Vehicle
+                              </option>
+                              <option>Sedan</option>
+                              <option>MiniVan</option>
+                              <option>Saloon</option>
+                            </select>
+                          </div>
+                          <div class="form-group wrap-input100 validate-input">
+                            <textarea
+                              style="padding-top: 10px"
+                              class="form-control input100"
+                              cols="30"
+                              rows="5"
+                              placeholder="anything else we should know..."
+                            ></textarea>
+                          </div>
+                          <button
+                            type="submit"
+                            class="btn btn-success book-btn"
+                          >
+                            Book
+                          </button>
+                        </form>
+                      </div>
+
+                      <div
+                        class="tab-pane"
+                        id="history"
+                        role="tabpanel"
+                        aria-labelledby="history-tab"
+                      >
+                        <form class="login100-form validate-form">
+                          <div class="form-group wrap-input100 validate-input">
+                            <input
+                              type="text"
+                              class="form-control input100"
+                              placeholder="Pickup Address"
+                            />
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                          </div>
+                          <div class="form-group wrap-input100 validate-input">
+                            <input
+                              type="text"
+                              class="form-control input100"
+                              placeholder="Dropoff Address"
+                            />
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                              <i class="fas fa-map-pin"></i>
+                            </span>
+                          </div>
+                          <div class="form-group wrap-input100 validate-input">
+                            <input
+                              type="text"
+                              class="form-control input100"
+                              placeholder="Number of persons"
+                            />
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                              <i class="fas fa-users"></i>
+                            </span>
+                          </div>
+                          <div class="row">
+                            <div class="col-6">
+                              <div
+                                class="form-group wrap-input100 validate-input"
+                              >
+                                <input
+                                  type="date"
+                                  class="form-control inputdate100"
+                                />
+                              </div>
+                            </div>
+
+                            <div class="col-6">
+                              <div
+                                class="form-group wrap-input100 validate-input"
+                              >
+                                <input
+                                  type="time"
+                                  class="form-control inputdate100"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-group wrap-input100 validate-input">
+                            <select class="form-control input100">
+                              <option value="" disabled selected>
+                                Select Vehicle
+                              </option>
+                              <option>Sedan</option>
+                              <option>MiniVan</option>
+                              <option>Saloon</option>
+                            </select>
+                          </div>
+                          <div class="form-group wrap-input100 validate-input">
+                            <textarea
+                              style="padding-top: 10px"
+                              class="form-control input100"
+                              cols="30"
+                              rows="5"
+                              placeholder="anything else we should know..."
+                            ></textarea>
+                          </div>
+                          <button
+                            type="submit"
+                            class="btn btn-success book-btn"
+                          >
+                            Book
+                          </button>
+                        </form>
+                      </div>
+
+                      <div
+                        class="tab-pane"
+                        id="deals"
+                        role="tabpanel"
+                        aria-labelledby="deals-tab"
+                      >
+                        <p class="card-text">
+                          Immerse yourself in the colours, aromas and traditions
+                          of Emilia-Romagna with a holiday in Bologna, and
+                          discover the city's rich artistic heritage.
+                        </p>
+                        <a href="#" class="btn btn-danger btn-sm">Get Deals</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="car-description-section">
+      <div class="container">
+        <div class="car-description-title">
+          <h2>Our Vehicles</h2>
+          <span class="span-underline"></span>
+        </div>
+
+        <div class="car-description">
+          <div class="card car-card shadow">
+            <img src="car1.jpg" class="car-image" alt="" srcset="" />
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4">
+                  <strong>Make</strong>
+                  <p>Honda</p>
+                  <strong>Color</strong>
+                  <p>Red</p>
+                  <strong>Seating Capacity</strong>
+                  <p>7</p>
+                </div>
+                <div class="col-4">
+                  <strong>Model</strong>
+                  <p>Accord</p>
+                  <strong>Year</strong>
+                  <p>2015</p>
+                  <strong>(MPG)</strong>
+                  <p>35.45</p>
+                </div>
+                <div class="col-4">
+                  <strong>Engine Type</strong>
+                  <p>Petrol</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card car-card shadow">
+            <img src="car2.jpg" class="car-image" alt="" srcset="" />
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4">
+                  <strong>Make</strong>
+                  <p>Honda</p>
+                  <strong>Color</strong>
+                  <p>Red</p>
+                  <strong>Seating Capacity</strong>
+                  <p>7</p>
+                </div>
+                <div class="col-4">
+                  <strong>Model</strong>
+                  <p>Accord</p>
+                  <strong>Year</strong>
+                  <p>2015</p>
+                  <strong>(MPG)</strong>
+                  <p>35.45</p>
+                </div>
+                <div class="col-4">
+                  <strong>Engine Type</strong>
+                  <p>Petrol</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card car-card shadow">
+            <img src="car1.jpg" class="car-image" alt="" srcset="" />
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4">
+                  <strong>Make</strong>
+                  <p>Honda</p>
+                  <strong>Color</strong>
+                  <p>Red</p>
+                  <strong>Seating Capacity</strong>
+                  <p>7</p>
+                </div>
+                <div class="col-4">
+                  <strong>Model</strong>
+                  <p>Accord</p>
+                  <strong>Year</strong>
+                  <p>2015</p>
+                  <strong>(MPG)</strong>
+                  <p>35.45</p>
+                </div>
+                <div class="col-4">
+                  <strong>Engine Type</strong>
+                  <p>Petrol</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card car-card shadow">
+            <img src="car2.jpg" class="car-image" alt="" srcset="" />
+            <div class="card-body car-card-body">
+              <div class="row">
+                <div class="col-4">
+                  <strong>Make</strong>
+                  <p>Honda</p>
+                  <strong>Color</strong>
+                  <p>Red</p>
+                  <strong>Seating Capacity</strong>
+                  <p>7</p>
+                </div>
+                <div class="col-4">
+                  <strong>Model</strong>
+                  <p>Accord</p>
+                  <strong>Year</strong>
+                  <p>2015</p>
+                  <strong>(MPG)</strong>
+                  <p>35.45</p>
+                </div>
+                <div class="col-4">
+                  <strong>Engine Type</strong>
+                  <p>Petrol</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="car-services">
+      <div class="car-description-title">
+        <h2>Our Services</h2>
+        <span class="span-underline"></span>
+      </div>
+      <div class="car-services-section">
+        <div class="container">
+          <div class="car-services-container">
+            <div class="car-services-item">
+              <i class="fas fa-desktop fa-5x"></i>
+              <div class="services-paragraph">
+                <strong>Easy to use</strong>
+              </div>
+              <p class="service-bottom-paragraph">
+                Our services are top notch, they are very easy to use. Access us
+                anywhere, anytime
+              </p>
+            </div>
+            <div class="car-services-item">
+              <i class="fas fa-tags fa-5x"></i>
+              <div class="services-paragraph">
+                <strong>Best Price Guaranteed</strong>
+              </div>
+              <p class="service-bottom-paragraph">
+                We offer the best price in the country. You are sure to save
+                more
+              </p>
+            </div>
+            <div class="car-services-item">
+              <i class="fas fa-headphones fa-5x"></i>
+              <div class="services-paragraph">
+                <strong>24/7 Customer Care</strong>
+              </div>
+              <p class="service-bottom-paragraph">
+                We are always available to help you with your needs.
+              </p>
+            </div>
+            <div class="car-services-item">
+              <i class="fas fa-home fa-5x"></i>
+              <div class="services-paragraph">
+                <strong>Home Pickups</strong>
+              </div>
+              <p class="service-bottom-paragraph">
+                We bring the car straight to your location, anytime
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonial">
+      <div class="car-description-title">
+        <h2>Testimonials</h2>
+        <span class="span-underline"></span>
+      </div>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleControls"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote>
+              <h4 class="testimonial-text">
+                "I used this service to travel to new york and no issue
+                whatsoever
+              </h4>
+            </blockquote>
+            <img src="car1.jpg" class="testimonial-image" alt="..." />
+            <em>Pebbles, New York</em>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">
+              "The customer service is so responsive and adequate, would
+              definitely use them again
+            </h2>
+            <img src="car2.jpg" class="testimonial-image" alt="..." />
+            <em>Pebbles, New York</em>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">
+              "Car was in great shape when I got it. So fantastic
+            </h2>
+            <img src="car2.jpg" class="testimonial-image" alt="..." />
+            <em>Pebbles, New York</em>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <div class="page-footer-section bg-dark fg-white">
+      <div class="container">
+        <div class="row mb-5 py-3">
+          <div class="col-sm-6 col-lg-4 py-3">
+            <h5 class="mb-3">Pages</h5>
+            <ul class="menu-link">
+              <li><a href="#" class="">Features</a></li>
+              <li><a href="#" class="">Customers</a></li>
+              <li><a href="#" class="">Pricing</a></li>
+              <li><a href="#" class="">GDPR</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-4 py-3">
+            <h5 class="mb-3">Company</h5>
+            <ul class="menu-link">
+              <li><a href="#" class="">About</a></li>
+              <li><a href="#" class="">Team</a></li>
+              <li><a href="#" class="">Leadership</a></li>
+              <li><a href="#" class="">Careers</a></li>
+              <li><a href="#" class="">HIRING!</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-4 py-3">
+            <h5 class="mb-3">Contact</h5>
+            <ul class="menu-link">
+              <li><a href="#" class="">Contact Us</a></li>
+              <li><a href="#" class="">Office Location</a></li>
+              <li><a href="#" class="">hello@fleets.com</a></li>
+              <li><a href="#" class="">support@fleets.com</a></li>
+              <li><a href="#" class="">+808 11233 900</a></li>
+            </ul>
+          
+
+          <!-- Social Media Button -->
+          <div class="mt-4">
+            <a href="#" class="btn btn-fab btn-success fg-white"
+              ><span style="color: white;" class="fa fa-facebook"></span
+            ></a>
+            <a href="#" class="btn btn-fab btn-success fg-white"
+              ><span style="color: white;" class="fa fa-twitter"></span
+            ></a>
+            <a href="#" class="btn btn-fab btn-success fg-white"
+              ><span style="color: white;" class="fa fa-instagram"></span
+            ></a>
+            <a href="#" class="btn btn-fab btn-success fg-white"
+              ><span style="color: white;" class="fa fa-google"></span
+            ></a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 py-2">
+            <img src="../assets/favicon-light.png" alt="" width="40" />
+            <!-- Please don't remove or modify the credits below -->
+            <p class="d-inline-block ml-2">
+              Copyright &copy;
+              <a href="#" class="fg-white fw-medium"
+                >Fleets</a
+              >. All rights reserved
+            </p>
+          </div>
+          <div class="col-12 col-md-6 py-2">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Terms of Use</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Cookie Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="slick.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,412 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+body {
+    font-family: "Montserrat";
+}
+
+a:hover {
+  color: #f0f0f0;
+  outline: 0 none;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 800px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.image-section {
+  position: relative;
+  z-index: -1;
+  height: 800px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../first-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.title-container {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.new-h1 {
+  padding-top: 100px;
+  margin-bottom: 30px;
+  font-family: "Montserrat";
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: white;
+}
+
+.title-card {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: "Montserrat";
+}
+
+.card-body {
+  padding: 40px;
+}
+
+.nav-tabs {
+  border-radius: 5px;
+  margin-left: 0px;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+}
+
+.nav-button {
+  border-radius: 25px;
+}
+
+@media (max-width: 500px) {
+  .nav-button {
+    display: none;
+  }
+
+  .title-card {
+    margin-left: 1px;
+    width: 100%;
+    height: unset;
+  }
+
+#overlay{
+    height: 1100px;
+}
+.image-section{
+    height: 1100px;
+}
+}
+.link-card {
+  font-size: 20px;
+  font-weight: 700;
+}
+.inputdate100 {
+  border-color: #57b846;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1;
+  display: block;
+  width: 100%;
+  background: white;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px #f0f0f0;
+  margin-bottom: 30px;
+}
+.input100 {
+  border-color: #57b846;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1;
+  display: block;
+  width: 100%;
+  background: white;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 30px 0 20px;
+  box-shadow: 2px 2px 2px #f0f0f0;
+  margin-bottom: 30px;
+}
+
+.input100:focus + .focus-input100 + .symbol-input100 {
+  color: #57b846;
+  padding-left: 28px;
+  border-color: #57b846;
+  outline: none;
+}
+
+.login100-form {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wrap-input100 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.validate-input {
+  position: relative;
+}
+
+.focus-input100 {
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 0px;
+  color: rgba(87, 184, 70, 0.8);
+}
+
+.symbol-input100 {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 50px;
+  bottom: 0;
+  left: 95%;
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+  color: #666666;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.book-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 20px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.nav-link {
+  color: white;
+}
+
+.car-description-title{
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.span-underline{
+    position: absolute;
+    bottom: -6px;
+    /* left: 50%; */
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: inline-block;
+    height: 3px;
+    width: 70px;
+    background-color: #00cc37;
+}
+
+.car-description-section {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.car-image {
+  width: 100%;
+}
+
+.car-card-body{
+    margin: 0 auto;
+}
+
+.car-card{
+    width: 00px;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.car-description {
+
+  position: relative;
+}
+.car-description .slick-arrow {
+  position: absolute;
+  bottom: -18%;
+}
+.car-description .slick-prev {
+  left: 40%;
+}
+@media (max-width: 768px) {
+  .car-description .slick-prev {
+    left: 34%;
+  }
+}
+.car-description .slick-next {
+  right: 40%;
+}
+@media (max-width: 520px) {
+  .car-description .slick-next {
+    right: 34%;
+  }
+}
+
+.span-arrow {
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #57b846;
+  border: 1px solid #57b846;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+.span-arrow:hover {
+  box-shadow: 2px 2px #f0f0f0;
+}
+
+.car-services-section{
+    background-color: #00cc37;
+    padding: 50px;
+    
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.car-services{
+    margin-top: 120px;
+}
+
+.car-services-container{
+    position: relative;
+}
+
+.car-services-container .slick-arrow {
+    position: absolute;
+    bottom: 50%;
+  }
+  .car-services-container .slick-prev {
+    left: -5%;
+  }
+  @media (max-width: 768px) {
+    .car-services-container .slick-prev {
+      left: -10%;
+    }
+  }
+  .car-services-container .slick-next {
+    right: -5%;
+  }
+  @media (max-width: 520px) {
+    .car-services-container .slick-next {
+      right: -10%;
+    }
+}
+
+.services-paragraph{
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.service-bottom-paragraph{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#testimonial{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+  }
+  
+  .testimonial-text{
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+    .carousel-item {
+      padding: 7% 15%;
+    }
+
+
+    .page-section {
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      
+      
+      
+      .page-section:not(.fg-white) h1,
+      .page-section:not(.fg-white) h2,
+      .page-section:not(.fg-white) h3 {
+        color: #6b6872;
+      }
+      
+      .page-footer-section {
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 20px;
+        background-color: #f0eef5;
+      }
+      
+      .page-footer-section.bg-dark .caption {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      
+      .page-footer-section.bg-dark hr {
+        border-color: #4d4853;
+      }
+      
+      .menu-link {
+        position: relative;
+        padding-left: 0;
+        list-style: none;
+      }
+      
+      .menu-link li {
+        display: block;
+        margin: 10px 0;
+      }
+      
+      .menu-link li a {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        color: #b2b4bf;
+      }
+      
+      .menu-link li a:hover {
+        color: #00cc37;
+        text-decoration: none;
+      }
+      
+      .page-footer-section a,
+      .page-footer-section p {
+        color: #b2b4bf;
+      }
+      
+      .page-footer-section a:hover {
+        color: #00cc37;
+        text-decoration: none;
+      }
+      
