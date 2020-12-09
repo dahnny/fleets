@@ -409,4 +409,10 @@ a:hover {
         color: #00cc37;
         text-decoration: none;
       }
+
+    .section-heading{
+        color: white;
+        text-align: center;
+        padding-top: 50px;
+    }
       
